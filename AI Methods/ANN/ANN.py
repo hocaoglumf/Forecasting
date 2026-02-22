@@ -28,6 +28,10 @@ series=np.array([
 p = 3
 X, y = make_lags(series, p)
 
+print("Lags: X")
+for i in range(len(X)):
+    print(y[i],"--->",X[i])
+
 # -----------------------------
 # 2) Train/test split (no shuffle)
 # -----------------------------

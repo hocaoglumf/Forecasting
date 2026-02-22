@@ -17,6 +17,11 @@ y = np.array([
     8731.00, 8702.00, 6677.00
 ], dtype=float)
 
+#y = np.array([
+#    264, 116, 165, 101, 209
+#] , dtype=float)
+
+
 n = len(y)
 t = np.arange(1, n + 1)  # 1..n
 
