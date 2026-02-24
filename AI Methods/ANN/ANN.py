@@ -25,7 +25,7 @@ series=np.array([
             8731.00, 8702.00, 6677.00
         ])
 
-p = 3
+p = 4
 X, y = make_lags(series, p)
 
 print("Lags: X")
