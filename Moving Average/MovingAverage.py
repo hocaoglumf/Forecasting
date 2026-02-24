@@ -54,8 +54,6 @@ print(forecast)
 
 
 
-#import numpy as np
-
 y_np = np.array(y)
 
 sma = np.convolve(y_np, np.ones(window)/window, mode='valid')
