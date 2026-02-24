@@ -7,7 +7,7 @@ import matplotlib.pyplot as plt
 from statsmodels.tsa.holtwinters import ExponentialSmoothing
 
 # -----------------------------
-# 1) Veriyi girin (örnek: sizin seri)
+# 1) Veriyi girin
 # -----------------------------
 y = [
     280.05, 305.18, 324.14, 355.64, 394.53, 438.96, 501.13, 572.49, 635.81,
