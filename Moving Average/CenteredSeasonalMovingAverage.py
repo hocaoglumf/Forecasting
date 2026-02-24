@@ -73,6 +73,7 @@ y = [
     8731.00, 8702.00, 6677.00
 ]
 
+print("Data Series Length :", len(y))
 s = 12  # monthly seasonality
 
 trend = centered_seasonal_moving_average(y, s)
