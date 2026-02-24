@@ -28,7 +28,7 @@ plt.legend()
 plt.title("Simple Moving Average")
 plt.show()
 
-#import numpy as np
+
 
 
 def moving_average_forecast(series, window, steps):
