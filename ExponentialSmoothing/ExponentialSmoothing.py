@@ -20,7 +20,7 @@ y = [
     8731.00, 8702.00, 6677.00
 ]
 
-# Zaman endeksi (aylık varsayımıyla). İsterseniz değiştirin.
+# Zaman endeksi (aylık varsayımıyla).
 idx = pd.period_range(start="2021-01", periods=len(y), freq="M")
 ts = pd.Series(y, index=idx).astype(float)
 
@@ -32,7 +32,7 @@ H = 12                    # kaç dönem ileri tahmin
 
 # Mevsimsellik türü:
 # seasonal="add" : genlik sabit (eklemeli)
-# seasonal="mul" : seviye arttıkça genlik artar (çarpanlı) -> sizin seri gibi büyüyen serilerde sık iyi çalışır.
+# seasonal="mul" : seviye arttıkça genlik artar (çarpanlı) -> Örnek seri gibi büyüyen serilerde sık iyi çalışır.
 model = ExponentialSmoothing(
     ts,
     trend="add",           # "add" veya "mul"

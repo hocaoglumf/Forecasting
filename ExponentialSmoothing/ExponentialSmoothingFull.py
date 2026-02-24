@@ -8,7 +8,7 @@ Merged Exponential Smoothing methods in ONE file:
 3) Holt-Winters Seasonal (Triple Exponential Smoothing) via statsmodels
 4) SES best alpha selection (grid search)
 
-Author: (your name)
+Author: M. Fatih HOCAOĞLU
 """
 
 from __future__ import annotations
@@ -98,12 +98,11 @@ def ses_best_alpha(data: List[float], step: float = 0.01) -> Tuple[float, float]
             best_err = err
             best_a = a
 
-    # best_a cannot be None here if step is valid
     return float(best_a), float(best_err)
 
 
 # ============================================================
-# 2) Holt's Linear Trend - Pure Python (Double Exponential)
+# 2) Holt's Linear Trend - (Double Exponential)
 # ============================================================
 
 def holt_fit(data: List[float], alpha: float, beta: float) -> Tuple[List[float], List[float], List[float]]:
@@ -221,7 +220,7 @@ def holt_winters_fit_forecast(
 
 
 # ============================================================
-# 4) Demo Runner (optional)
+# 4) Demo Runner
 # ============================================================
 
 def _demo():

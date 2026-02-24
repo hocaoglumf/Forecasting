@@ -1,7 +1,7 @@
 import matplotlib.pyplot as plt
 
 # ----------------------------
-# Holt's Linear Trend (Double Exponential Smoothing) - Pure Python
+# Holt's Linear Trend (Double Exponential Smoothing)
 # ----------------------------
 def holt_linear_smoothing(data, alpha, beta):
     if not (0 < alpha < 1):
@@ -14,7 +14,7 @@ def holt_linear_smoothing(data, alpha, beta):
     n = len(data)
     level = [0.0] * n
     trend = [0.0] * n
-    fitted = [None] * n  # fitted[t] forecasts y[t]; fitted[0] undefined
+    fitted = [None] * n
 
     # Initialization
     level[0] = float(data[0])
@@ -71,7 +71,7 @@ def grid_search_alpha_beta(data, alpha_step=0.02, beta_step=0.02):
 
 
 # ----------------------------
-# Example data (replace with yours)
+# Example data
 # ----------------------------
 '''
 y = [
